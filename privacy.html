@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy | VeritasHire</title>
+<meta name="description" content="How VeritasHire collects and uses information.">
+<link rel="canonical" href="https://veritashire.com/privacy.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=EB+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<!-- TODO: legal review -->
+<style>
+:root{--navy:#0B1F3A;--gold:#C9A24B;--gold-dark:#8A6A1F;--offwhite:#F8F5EE;--text:#1A1A1A;--muted:#5B6472;--line:#E3DDCF;--serif:"EB Garamond",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 var(--sans);color:var(--text);background:#fff}
+header{height:64px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 24px}
+.logo{font:600 26px var(--serif);color:var(--navy);text-decoration:none}.logo span{color:var(--gold-dark)}
+main{max-width:720px;margin:0 auto;padding:48px 24px 72px}
+h1,h2{font-family:var(--serif);color:var(--navy);line-height:1.15;margin:0}
+h1{font-size:38px;margin-bottom:8px}
+h2{font-size:26px;margin:36px 0 8px}
+.muted{color:var(--muted)}
+ul{padding-left:20px}
+a{color:var(--navy)}
+a:focus-visible{outline:2px solid var(--gold-dark);outline-offset:3px}
+footer{background:var(--navy);color:var(--offwhite);padding:28px 24px;font-size:14px;text-align:center}
+footer a{color:var(--offwhite)}
+</style>
+</head>
+<body>
+<header><a class="logo" href="/">Veritas<span>Hire</span></a></header>
+<main>
+  <h1>Privacy</h1>
+  <p class="muted">VeritasHire is a division of Growketing Ads Private Limited.</p>
+
+  <h2>What we collect</h2>
+  <ul>
+    <li>Details you enter in our booking form: your name, work email and team size.</li>
+    <li>Website analytics, collected through Google Analytics 4, such as pages viewed, scroll depth and approximate location.</li>
+    <li>Advertising measurement data, collected through the Meta Pixel, such as whether a visit led to a form submission or a booked call.</li>
+    <li>Recordings and notes of supervision meetings held during a 90-day term. Meetings are recorded with everyone's consent.</li>
+  </ul>
+
+  <h2>Why we collect it</h2>
+  <ul>
+    <li>To prepare for and run your call, and to reply to you.</li>
+    <li>To understand how the website is used and to measure our advertising.</li>
+    <li>To supervise placements and keep accountability during the 90-day term.</li>
+  </ul>
+
+  <h2>Booking calendar</h2>
+  <p>Bookings are made through Calendly. Details you enter there are handled by Calendly under its own terms.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this page or your information, contact us at <a id="pe" href="#" hidden></a><span id="pe-fallback">the email address listed on our homepage</span>.</p>
+  <!-- TODO: set the contact email below -->
+  <!-- TODO: legal review of this page before launch -->
+</main>
+<footer>VeritasHire, a division of Growketing Ads Private Limited &middot; <a href="terms.html">Terms</a> &middot; <a href="/">Home</a></footer>
+<script>
+(function(){var email="TODO"; /* TODO: contact email */
+if(email!=="TODO"){var a=document.getElementById('pe');a.href='mailto:'+email;a.textContent=email;a.hidden=false;document.getElementById('pe-fallback').hidden=true;}})();
+</script>
+</body>
+</html>
